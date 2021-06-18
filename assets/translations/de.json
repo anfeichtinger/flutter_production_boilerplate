@@ -1,0 +1,35 @@
+{
+  "app_name": "Flutter Production Boilerplate",
+
+  "bottom_nav_first": "Home",
+  "bottom_nav_second": "Info",
+
+  "localization_title": "Lokalisierung",
+  "localization_content": "Vereinfachte Übersetzungen mit dem Paket Easy Translations.",
+
+  "linting_title": "Linting",
+  "linting_content": "Strengere Linting-Regeln mit Pedantic, empfohlen von Google.",
+
+  "storage_title": "Speicher",
+  "storage_content": "Extrem schnelle, in reinem Dart geschriebene Datenbank mit Hive.",
+
+  "dark_mode_title": "Nachtmodus",
+  "dark_mode_content": "Sanfter Übergang in den Nachtmodus durch die eingebaute Theming-Engine.",
+
+  "state_title": "Zustand",
+  "state_content": "Leistungsstarke Zustandsverwaltung mit Cubit & BLOC.",
+
+  "display_title": "Anzeige",
+  "display_content": "Unterstützt Displays mit hoher Bildwiederholrate durch Flutter Displaymode.",
+
+  "language_switch_title": "Deutsch verwenden",
+
+  "github_card_title": "GitHub repository",
+  "website_card_title": "Entwickler Webseite",
+  "twitter_card_title": "Twitter",
+  "instagram_card_title": "Instagram",
+  "donate_card_title": "Spenden",
+
+  "author_divider_title": "Autor",
+  "packages_divider_title": "Pakete"
+}

@@ -1,0 +1,47 @@
+{
+  "app_name": "Flutter Production Boilerplate",
+
+  "bottom_nav_first": "Home",
+  "bottom_nav_second": "Info",
+
+  "localization_title": "Localization",
+  "localization_content": "Simplified translations with the Easy Translations package.",
+
+  "linting_title": "Linting",
+  "linting_content": "Stricter linting rules with pedantic recommended by Google.",
+
+  "storage_title": "Storage",
+  "storage_content": "Blazing fast key-value database written in pure Dart with Hive.",
+
+  "dark_mode_title": "Dark Mode",
+  "dark_mode_content": "Smooth transition to dark mode by using the inbuilt theming engine.",
+
+  "state_title": "State",
+  "state_content": "Powerful state management using Cubit & BLOC.",
+
+  "display_title": "Display",
+  "display_content": "Support for high refresh rate displays with the flutter displaymode package.",
+
+  "language_switch_title": "Use german",
+
+  "github_card_title": "GitHub repository",
+  "website_card_title": "Developer website",
+  "twitter_card_title": "Twitter",
+  "instagram_card_title": "Instagram",
+  "donate_card_title": "Donate",
+
+  "author_divider_title": "Author",
+  "packages_divider_title": "Packages",
+
+  "flutter_bloc": "Flutter bloc",
+  "bloc": "Bloc",
+  "hydrated_bloc": "Hydrated bloc",
+  "equatable": "Equatable",
+  "pedantic": "Pedantic",
+  "path_provider": "Path provider",
+  "flutter_displaymode": "Displaymode",
+  "easy_localization": "Easy localization",
+  "hive": "Hive",
+  "url_launcher": "Url launcher",
+  "ionicons": "Ionicons"
+}
