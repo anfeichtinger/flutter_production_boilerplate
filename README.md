@@ -53,26 +53,26 @@ This repository makes use of the following pub packages:
 
 After following the installation steps you can customize your project. 
 
-#### Changing the package and app name
+### Changing the package and app name
 
 You can follow the instructions in this [Stackoverflow issue](https://stackoverflow.com/a/51550358).
 
-#### Theme
+### Theme
 
 You can customize your brand colors in the [lib/config/theme.dart](./lib/config/theme.dart) file.
 The project useses colors from [TailwindCSS](https://tailwindcss.com/docs/customizing-colors). As primary swatch the indigo color palette is used while for the text the gray color palette is used. Feel free to replace those values with your own.
 In order to get a smooth transition for the text colors it is necessary to override each text type in the TextTheme.
 
-#### Removing unwanted packages
+### Removing unwanted packages
 
 If a package is not listed, then removing it from [pubspec.yaml](./pubspec.yaml) as well as all imports and uses should be enough. This is required for removing every packages, the following instructions are an addition to that.
 
-##### Pedantic
+#### Pedantic
 
 Delete the [analysis_options.yaml](./analysis_options.yaml) file.
 As an alternative you can modify the rules in this file or use a different package like [Lint](https://pub.dev/packages/lint).
 
-##### Easy Localization
+#### Easy Localization
 
 Remove the [assets/translations](./assets/translations) folder.
 Go to [ios/Runner/Info.plist](./ios/Runner/Info.plist) and remove the following code:
@@ -85,7 +85,7 @@ Go to [ios/Runner/Info.plist](./ios/Runner/Info.plist) and remove the following 
 </array>
 ```
 
-##### Url Launcher
+#### Url Launcher
 
 For iOS go to [ios/Runner/Info.plist](./ios/Runner/Info.plist) and remove the following code:
 
