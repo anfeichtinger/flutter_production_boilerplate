@@ -18,12 +18,12 @@ git clone https://github.com/anfeichtinger/flutter_production_boilerplate.git
 cd flutter_production_boilerplate
 ```
 
+You can remove the screenshots located in [assets/img/](./assets/img).
+
 Get the dependencies.
 ```sh
 flutter pub get
 ```
-
-You can remove the screenshots located in [assets/img/](./assets/img).
 
 Run the app via command line or through your development environment. (optional)
 ```sh
@@ -52,6 +52,7 @@ This repository makes use of the following pub packages:
 ## Using this package as a starting point
 
 After following the installation steps you can customize your project. 
+The screens and widgets that are inside the project can be easily replaced or removed. They are supposed to give the user a basic understanding of the relations between widgets and some good practices. The code includes some comments with documentation and examples. The examples can be found by searching for "Example:" inside the project files.
 
 ### Changing the package and app name
 
