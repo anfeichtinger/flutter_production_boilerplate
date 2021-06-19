@@ -23,6 +23,8 @@ Get the dependencies.
 flutter pub get
 ```
 
+You can remove the screenshots located in [assets/img/](./assets/img).
+
 Run the app via command line or through your development environment. (optional)
 ```sh
 flutter run lib/main.dart
@@ -106,6 +108,20 @@ Go to [android/app/src/AndroidManifest.xml](./android/app/src/main/AndroidManife
     </intent>
 </queries>
 ```
+
+## Screenshots
+
+#### Light Theme
+
+| Home Light | Info Light |
+| ------ | ------ |
+| ![Home Light](./assets/img/home_light.png) | ![Info Light](./assets/img/info_light.png) |
+
+#### Dark Theme
+
+| Home Dark German | Info Dark German |
+| ------ | ------ |
+| ![Home Dark](./assets/img/home_dark.png) | ![Info Dark](./assets/img/info_dark.png) |
 
 ## License
 
