@@ -9,10 +9,12 @@ class InfoCard extends StatelessWidget {
   final bool isPrimaryColor;
 
   const InfoCard(
-      {required this.title,
+      {Key? key,
+      required this.title,
       required this.content,
       required this.icon,
-      required this.isPrimaryColor});
+      required this.isPrimaryColor})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

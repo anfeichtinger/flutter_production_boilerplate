@@ -9,7 +9,7 @@ class LinkCard extends StatelessWidget {
   final IconData icon;
   final String url;
 
-  const LinkCard({required this.title, required this.icon, required this.url});
+  const LinkCard({Key? key, required this.title, required this.icon, required this.url}): super(key: key);
 
   @override
   Widget build(BuildContext context) {

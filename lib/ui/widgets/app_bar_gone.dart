@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class AppBarGone extends StatelessWidget implements PreferredSizeWidget {
-  const AppBarGone();
+  const AppBarGone({Key? key}): super(key: key);
 
   @override
   Widget build(BuildContext context) {

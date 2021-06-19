@@ -5,7 +5,10 @@ import 'package:flutter_production_boilerplate/cubit/bottom_nav_cubit.dart';
 import 'package:ionicons/ionicons.dart';
 
 class BottomNavBar extends StatelessWidget {
-  BottomNavBar();
+  /// It is okay not to use a const constructor here.
+  /// Using const breaks updating of selected BottomNavigationBarItem.
+  // ignore: prefer_const_constructors_in_immutables
+  BottomNavBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

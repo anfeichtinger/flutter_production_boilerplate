@@ -21,7 +21,7 @@ class ThemeCubit extends HydratedCubit<ThemeState> {
   }
 
   @override
-  Map<String, dynamic>? toJson(ThemeState state) {
+  Map<String, bool>? toJson(ThemeState state) {
     return {'isDark': state.themeData.brightness == Brightness.dark};
   }
 }

@@ -8,7 +8,7 @@ import 'package:flutter_production_boilerplate/ui/widgets/first_screen/info_card
 import 'package:ionicons/ionicons.dart';
 
 class FirstScreen extends StatelessWidget {
-  const FirstScreen();
+  const FirstScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -102,36 +102,36 @@ class FirstScreen extends StatelessWidget {
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
               childAspectRatio: 4 / 5,
-              children: [
+              children: const [
                 /// Example: it is good practice to put widgets in separate files.
                 /// This way the screen files won't become too large and
                 /// the code becomes more clear.
-                const InfoCard(
+                InfoCard(
                     title: 'localization_title',
                     content: 'localization_content',
                     icon: Ionicons.text_outline,
                     isPrimaryColor: true),
-                const InfoCard(
+                InfoCard(
                     title: 'linting_title',
                     content: 'linting_content',
                     icon: Ionicons.options_outline,
                     isPrimaryColor: false),
-                const InfoCard(
+                InfoCard(
                     title: 'storage_title',
                     content: 'storage_content',
                     icon: Ionicons.folder_outline,
                     isPrimaryColor: false),
-                const InfoCard(
+                InfoCard(
                     title: 'dark_mode_title',
                     content: 'dark_mode_content',
                     icon: Ionicons.moon_outline,
                     isPrimaryColor: true),
-                const InfoCard(
+                InfoCard(
                     title: 'state_title',
                     content: 'state_content',
                     icon: Ionicons.notifications_outline,
                     isPrimaryColor: true),
-                const InfoCard(
+                InfoCard(
                     title: 'display_title',
                     content: 'display_content',
                     icon: Ionicons.speedometer_outline,

@@ -1,4 +1,5 @@
 import 'dart:io';
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -27,18 +28,20 @@ void main() async {
   runApp(
     EasyLocalization(
       path: 'assets/translations',
-      supportedLocales: [
-        const Locale('en'),
-        const Locale('de'),
+      supportedLocales: const [
+        Locale('en'),
+        Locale('de'),
       ],
       fallbackLocale: const Locale('en'),
       useFallbackTranslations: true,
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider<ThemeCubit>(
@@ -49,7 +52,7 @@ class MyApp extends StatelessWidget {
             /// Localization is not available for the title.
             title: 'Flutter Production Boilerplate',
             theme: state.themeData,
-            home: SkeletonScreen(),
+            home: const SkeletonScreen(),
             debugShowCheckedModeBanner: false,
             localizationsDelegates: context.localizationDelegates,
             supportedLocales: context.supportedLocales,

@@ -8,9 +8,11 @@ import 'package:flutter_production_boilerplate/ui/widgets/app_bar_gone.dart';
 import 'package:flutter_production_boilerplate/ui/widgets/bottom_nav_bar.dart';
 
 class SkeletonScreen extends StatelessWidget {
-  final _pageNavigation = [
-    const FirstScreen(),
-    const SecondScreen(),
+  const SkeletonScreen({Key? key}) : super(key: key);
+
+  final _pageNavigation = const [
+    FirstScreen(),
+    SecondScreen(),
   ];
 
   @override

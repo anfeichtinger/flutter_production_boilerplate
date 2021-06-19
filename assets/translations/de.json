@@ -8,7 +8,7 @@
   "localization_content": "Vereinfachte Übersetzungen mit dem Paket Easy Translations.",
 
   "linting_title": "Linting",
-  "linting_content": "Strengere Linting-Regeln mit Pedantic, empfohlen von Google.",
+  "linting_content": "Strengere Linting-Regeln mit Flutter Lints, empfohlen von Google.",
 
   "storage_title": "Speicher",
   "storage_content": "Extrem schnelle, in reinem Dart geschriebene Datenbank mit Hive.",

@@ -125,6 +125,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.3.2"
+  flutter_lints:
+    dependency: "direct dev"
+    description:
+      name: flutter_lints
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.3"
   flutter_localizations:
     dependency: transitive
     description: flutter
@@ -176,7 +183,7 @@ packages:
     source: hosted
     version: "0.6.3"
   lints:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: lints
       url: "https://pub.dartlang.org"
@@ -431,7 +438,7 @@ packages:
       name: win32
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.5"
+    version: "2.2.0"
   xdg_directories:
     dependency: transitive
     description:

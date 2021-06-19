@@ -9,7 +9,7 @@ class GridItem extends StatelessWidget {
   final String url;
 
   /// Named parameters are preferred, they make the code easier to understand.
-  const GridItem({required this.title, required this.icon, required this.url});
+  const GridItem({Key? key, required this.title, required this.icon, required this.url}): super(key: key);
 
   @override
   Widget build(BuildContext context) {

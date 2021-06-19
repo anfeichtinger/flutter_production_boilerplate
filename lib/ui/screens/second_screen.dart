@@ -6,7 +6,7 @@ import 'package:flutter_production_boilerplate/ui/widgets/second_screen/text_div
 import 'package:ionicons/ionicons.dart';
 
 class SecondScreen extends StatelessWidget {
-  const SecondScreen();
+  const SecondScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,18 +35,18 @@ class SecondScreen extends StatelessWidget {
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
               shrinkWrap: true,
-              children: [
-                const GridItem(
+              children: const [
+                GridItem(
                   title: 'instagram_card_title',
                   icon: Ionicons.logo_instagram,
                   url: 'https://www.instagram.com/anfeichtinger',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'twitter_card_title',
                   icon: Ionicons.logo_twitter,
                   url: 'https://twitter.com/_pharrax',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'donate_card_title',
                   icon: Ionicons.heart_outline,
                   url:
@@ -62,58 +62,58 @@ class SecondScreen extends StatelessWidget {
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
               shrinkWrap: true,
-              children: [
-                const GridItem(
+              children: const [
+                GridItem(
                   title: 'flutter_bloc',
                   icon: Ionicons.apps_outline,
                   url: 'https://pub.dev/packages/flutter_bloc',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'bloc',
                   icon: Ionicons.grid_outline,
                   url: 'https://pub.dev/packages/bloc',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'hydrated_bloc',
                   icon: Ionicons.folder_open_outline,
                   url: 'https://pub.dev/packages/hydrated_bloc',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'equatable',
                   icon: Ionicons.git_compare_outline,
                   url: 'https://pub.dev/packages/equatable',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'lints',
                   icon: Ionicons.options_outline,
-                  url: 'https://pub.dev/packages/lints',
+                  url: 'https://pub.dev/packages/flutter_lints',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'path_provider',
                   icon: Ionicons.extension_puzzle_outline,
                   url: 'https://pub.dev/packages/path_provider',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'flutter_displaymode',
                   icon: Ionicons.speedometer_outline,
                   url: 'https://pub.dev/packages/flutter_displaymode',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'easy_localization',
                   icon: Ionicons.text_outline,
                   url: 'https://pub.dev/packages/easy_localization',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'hive',
                   icon: Ionicons.folder_outline,
                   url: 'https://pub.dev/packages/hive',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'url_launcher',
                   icon: Ionicons.share_outline,
                   url: 'https://pub.dev/packages/url_launcher',
                 ),
-                const GridItem(
+                GridItem(
                   title: 'ionicons',
                   icon: Ionicons.logo_ionic,
                   url: 'https://pub.dev/packages/ionicons',
