@@ -4,7 +4,7 @@
 This repository is the starting point for my personal projects. If you have any suggestions or improvements feel free to let me know. The project strives to implement best practices recommended by Google and other developers. These best practices include but are not limited to: 
 
 - Using BLOC & Cubit for state management.
-- Using Lints for stricter linting rules.
+- Using Flutter Lints for stricter linting rules.
 - Using Hive for platform independent storage that also works for web.
 - Project structure, const constructors, extracted widgets and many more...
 
@@ -68,7 +68,7 @@ In order to get a smooth transition for the text colors it is necessary to overr
 
 If a package is not listed, then removing it from [pubspec.yaml](./pubspec.yaml) as well as all imports and uses should be enough. This is required for removing every packages, the following instructions are an addition to that.
 
-#### Lints
+#### Flutter Lints
 
 Delete the [analysis_options.yaml](./analysis_options.yaml) file.
 As an alternative you can modify the rules in this file or use a different package like [Lint](https://pub.dev/packages/lint).
