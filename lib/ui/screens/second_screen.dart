@@ -84,9 +84,9 @@ class SecondScreen extends StatelessWidget {
                   url: 'https://pub.dev/packages/equatable',
                 ),
                 const GridItem(
-                  title: 'pedantic',
+                  title: 'lints',
                   icon: Ionicons.options_outline,
-                  url: 'https://pub.dev/packages/pedantic',
+                  url: 'https://pub.dev/packages/lints',
                 ),
                 const GridItem(
                   title: 'path_provider',

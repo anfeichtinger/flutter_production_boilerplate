@@ -1,10 +1,10 @@
 # Flutter Production Boilerplate
-## A flutter project containing bloc, pedantic, hive, easy_translations and more!
+## A flutter project containing bloc, lints, hive, easy_translations and more!
 
 This repository is the starting point for my personal projects. If you have any suggestions or improvements feel free to let me know. The project strives to implement best practices recommended by Google and other developers. These best practices include but are not limited to: 
 
 - Using BLOC & Cubit for state management.
-- Using Pedantic for stricter linting rules.
+- Using Lints for stricter linting rules.
 - Using Hive for platform independent storage that also works for web.
 - Project structure, const constructors, extracted widgets and many more...
 
@@ -40,7 +40,7 @@ This repository makes use of the following pub packages:
 | [Flutter Bloc](https://pub.dev/packages/flutter_bloc) | ^7.0.1 | State management*
 | [Hydrated Bloc](https://pub.dev/packages/hydrated_bloc) | ^7.0.1 | Persists Bloc state with Hive
 | [Equatable](https://pub.dev/packages/equatable) | ^2.0.2 | Easily compare custom classes, used for Bloc states*
-| [Pedantic](https://pub.dev/packages/pedantic) | ^1.11.0 | Stricter linting rules
+| [Lints](https://pub.dev/packages/lints) | ^1.0.1 | Stricter linting rules
 | [Path Provider](https://pub.dev/packages/path_provider) | ^2.0.2 | Get the save path for Hive
 | [Flutter Displaymode](https://pub.dev/packages/flutter_displaymode) | ^0.3.2 | Support high refresh rate displays
 | [Easy Localization](https://pub.dev/packages/easy_localization) | ^3.0.0 | Makes localization easy
@@ -67,7 +67,7 @@ In order to get a smooth transition for the text colors it is necessary to overr
 
 If a package is not listed, then removing it from [pubspec.yaml](./pubspec.yaml) as well as all imports and uses should be enough. This is required for removing every packages, the following instructions are an addition to that.
 
-#### Pedantic
+#### Lints
 
 Delete the [analysis_options.yaml](./analysis_options.yaml) file.
 As an alternative you can modify the rules in this file or use a different package like [Lint](https://pub.dev/packages/lint).
