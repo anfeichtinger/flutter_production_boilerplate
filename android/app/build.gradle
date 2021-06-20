@@ -34,7 +34,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "dev.feichtinger.flutterproductionboilerplate.flutter_production_boilerplate"
+        applicationId "dev.feichtinger.flutterproductionboilerplate.timebox"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
