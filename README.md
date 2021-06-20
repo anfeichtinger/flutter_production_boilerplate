@@ -14,8 +14,8 @@ This repository requires [Flutter](https://flutter.dev/docs/get-started/install)
 
 Clone the project and enter the project folder.
 ```sh
-git clone https://github.com/anfeichtinger/timebox.git
-cd timebox
+git clone https://github.com/anfeichtinger/flutter_production_boilerplate.git
+cd flutter_production_boilerplate
 ```
 
 You can remove the screenshots located in [assets/img/](./assets/img).
