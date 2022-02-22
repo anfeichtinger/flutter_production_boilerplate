@@ -41,11 +41,11 @@ This repository makes use of the following pub packages:
 | [Hydrated Bloc](https://pub.dev/packages/hydrated_bloc) | ^8.0.0 | Persists Bloc state with Hive
 | [Equatable](https://pub.dev/packages/equatable) | ^2.0.3 | Easily compare custom classes, used for Bloc states*
 | [Flutter Lints](https://pub.dev/packages/flutter_lints) | ^1.0.4 | Stricter linting rules
-| [Path Provider](https://pub.dev/packages/path_provider) | ^2.0.8 | Get the save path for Hive
+| [Path Provider](https://pub.dev/packages/path_provider) | ^2.0.9 | Get the save path for Hive
 | [Flutter Displaymode](https://pub.dev/packages/flutter_displaymode) | ^0.3.2 | Support high refresh rate displays
 | [Easy Localization](https://pub.dev/packages/easy_localization) | ^3.0.0 | Makes localization easy
 | [Hive](https://pub.dev/packages/hive) | ^2.0.5 | Platform independent storage.
-| [Url Launcher](https://pub.dev/packages/url_launcher) | ^6.0.17 | Open urls in Browser
+| [Url Launcher](https://pub.dev/packages/url_launcher) | ^6.0.20 | Open urls in Browser
 | [Ionicons](https://pub.dev/packages/ionicons) | ^0.1.2 | Modern icon library
 > \* Recommended to keep regardless of your project
 

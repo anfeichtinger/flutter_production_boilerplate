@@ -22,25 +22,27 @@ class BottomNavBar extends StatelessWidget {
           topRight: Radius.circular(12),
         ),
       ),
-      child: BottomNavigationBar(
-        currentIndex: context.read<BottomNavCubit>().state,
-        onTap: (index) => context.read<BottomNavCubit>().updateIndex(index),
-        type: BottomNavigationBarType.fixed,
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        selectedItemColor: Theme.of(context).primaryColor,
-        unselectedItemColor: Theme.of(context).textTheme.bodyText1!.color,
-        items: [
-          BottomNavigationBarItem(
-            icon: const Icon(Ionicons.home_outline),
-            label: tr('bottom_nav_first'),
-          ),
-          BottomNavigationBarItem(
-            icon: const Icon(Ionicons.information_circle_outline),
-            label: tr('bottom_nav_second'),
-          ),
-        ],
-      ),
+      child: BlocBuilder<BottomNavCubit, int>(builder: (context, state) {
+        return BottomNavigationBar(
+          currentIndex: state,
+          onTap: (index) => context.read<BottomNavCubit>().updateIndex(index),
+          type: BottomNavigationBarType.fixed,
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          selectedItemColor: Theme.of(context).primaryColor,
+          unselectedItemColor: Theme.of(context).textTheme.bodyText1!.color,
+          items: [
+            BottomNavigationBarItem(
+              icon: const Icon(Ionicons.home_outline),
+              label: tr('bottom_nav_first'),
+            ),
+            BottomNavigationBarItem(
+              icon: const Icon(Ionicons.information_circle_outline),
+              label: tr('bottom_nav_second'),
+            ),
+          ],
+        );
+      }),
     );
   }
 }
