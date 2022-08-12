@@ -133,13 +133,13 @@ following code:
 
 | Home Light | Info Light |
 | ------ | ------ |
-| ![Home Light](./assets/img/home_light.png) | ![Info Light](./assets/img/info_light.png) |
+| ![Home Light](./assets/img/home_light.png "The home page with a light theme.") | ![Info Light](./assets/img/info_light.png "The home page with a dark theme.") |
 
 #### Dark Theme
 
 | Home Dark German | Info Dark German |
 | ------ | ------ |
-| ![Home Dark](./assets/img/home_dark.png) | ![Info Dark](./assets/img/info_dark.png) |
+| ![Home Dark](./assets/img/home_dark.png "The info page with a light theme.") | ![Info Dark](./assets/img/info_dark.png "The info page with a dark theme.") |
 
 ## License
 
