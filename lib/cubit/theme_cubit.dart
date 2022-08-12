@@ -1,27 +1,31 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_production_boilerplate/config/theme.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 
 part 'theme_state.dart';
 
-class ThemeCubit extends HydratedCubit<ThemeState> {
-  ThemeCubit() : super(ThemeState(AppThemes.lightTheme));
+class ThemeCubit extends HydratedCubit<ThemeModeState> {
+  ThemeCubit() : super(const ThemeModeState());
 
-  void getTheme(ThemeState state) {
+  void getTheme(ThemeModeState state) {
     emit(state);
   }
 
   @override
-  ThemeState? fromJson(Map<String, dynamic> json) {
-    return json['isDark'] as bool
-        ? ThemeState(AppThemes.darkTheme)
-        : ThemeState(AppThemes.lightTheme);
+  ThemeModeState? fromJson(Map<String, dynamic> json) {
+    switch (json['themeMode']) {
+      case 'ThemeMode.dark':
+        return const ThemeModeState(themeMode: ThemeMode.dark);
+      case 'ThemeMode.light':
+        return const ThemeModeState(themeMode: ThemeMode.light);
+      case 'ThemeMode.system':
+      default:
+        return const ThemeModeState(themeMode: ThemeMode.system);
+    }
   }
 
   @override
-  Map<String, bool>? toJson(ThemeState state) {
-    return {'isDark': state.themeData.brightness == Brightness.dark};
+  Map<String, String>? toJson(ThemeModeState state) {
+    return <String, String>{'themeMode': state.themeMode.toString()};
   }
 }

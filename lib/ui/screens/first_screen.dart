@@ -1,72 +1,33 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_production_boilerplate/config/theme.dart';
-import 'package:flutter_production_boilerplate/cubit/theme_cubit.dart';
-import 'package:flutter_production_boilerplate/ui/widgets/header.dart';
-import 'package:flutter_production_boilerplate/ui/widgets/first_screen/info_card.dart';
 import 'package:ionicons/ionicons.dart';
 
+import '../widgets/first_screen/info_card.dart';
+import '../widgets/first_screen/theme_card.dart';
+import '../widgets/header.dart';
+
 class FirstScreen extends StatelessWidget {
-  const FirstScreen({Key? key}) : super(key: key);
+  const FirstScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).colorScheme.background,
       child: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           physics: const BouncingScrollPhysics(),
-          children: [
+          children: <Widget>[
             const Header(text: 'app_name'),
 
             Card(
               elevation: 2,
-              color: Theme.of(context).cardColor,
-
-              /// Example: Getting border radius circular as const
-              /// Nested Widgets do not need to be declared as const.
-              shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(8))),
-              child: SwitchListTile(
-                onChanged: (bool newValue) {
-                  /// Example: Change theme with Cubit
-                  BlocProvider.of<ThemeCubit>(context).getTheme(ThemeState(
-                      newValue ? AppThemes.darkTheme : AppThemes.lightTheme));
-                },
-                shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(8))),
-                value: Theme.of(context).brightness == Brightness.dark,
-                title: Row(
-                  children: [
-                    /// Examle: Ionicons
-                    /// Available icons -> https://ionic.io/ionicons
-                    Icon(Ionicons.moon_outline,
-                        color: Theme.of(context).primaryColor),
-                    const SizedBox(width: 16),
-                    Text(
-                      /// Example: Use the easy_translations package
-                      tr('dark_mode_title'),
-                      style: Theme.of(context)
-                          .textTheme
-                          .subtitle1!
-                          .apply(fontWeightDelta: 2),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-
-            /// Example: Good way to add space between items
-            const SizedBox(height: 8),
-            Card(
-              elevation: 2,
+              shadowColor: Theme.of(context).colorScheme.shadow,
 
               /// Example: Many items have their own colors inside of the ThemData
               /// You can overwrite them in [config/theme.dart].
-              color: Theme.of(context).cardColor,
+              color: Theme.of(context).colorScheme.surface,
               shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(8))),
+                  borderRadius: BorderRadius.all(Radius.circular(12))),
               child: SwitchListTile(
                 onChanged: (bool newValue) {
                   /// Example: Change locale
@@ -76,50 +37,87 @@ class FirstScreen extends StatelessWidget {
                       newValue ? const Locale('de') : const Locale('en'));
                 },
                 shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(8))),
+                    borderRadius: BorderRadius.all(Radius.circular(12))),
                 value: context.locale == const Locale('de'),
                 title: Row(
-                  children: [
-                    Icon(Ionicons.text_outline,
-                        color: Theme.of(context).primaryColor),
+                  children: <Widget>[
+                    Icon(Ionicons.language_outline,
+                        color: Theme.of(context).colorScheme.primary),
                     const SizedBox(width: 16),
                     Text(
                       tr('language_switch_title'),
                       style: Theme.of(context)
                           .textTheme
-                          .subtitle1!
+                          .titleMedium!
                           .apply(fontWeightDelta: 2),
                     ),
                   ],
                 ),
               ),
             ),
+
             const SizedBox(height: 8),
+
+            GridView.count(
+                physics: const NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+                crossAxisCount: 3,
+                crossAxisSpacing: 8,
+                mainAxisSpacing: 8,
+                childAspectRatio: 1.75 / 1,
+                padding: EdgeInsets.zero,
+                children: const <ThemeCard>[
+                  ThemeCard(
+                    mode: ThemeMode.system,
+                    icon: Ionicons.contrast_outline,
+                  ),
+                  ThemeCard(
+                    mode: ThemeMode.light,
+                    icon: Ionicons.sunny_outline,
+                  ),
+                  ThemeCard(
+                    mode: ThemeMode.dark,
+                    icon: Ionicons.moon_outline,
+                  ),
+                ]),
+
+            /// Example: Good way to add space between items without using Paddings
+            const SizedBox(height: 8),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: Divider(
+                color:
+                    Theme.of(context).colorScheme.onBackground.withOpacity(.4),
+              ),
+            ),
+            const SizedBox(height: 8),
+
             GridView.count(
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               crossAxisCount: 2,
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
-              childAspectRatio: 4 / 5,
-              children: const [
+              childAspectRatio: 4 / 5.5,
+              padding: EdgeInsets.zero,
+              children: const <InfoCard>[
                 /// Example: it is good practice to put widgets in separate files.
                 /// This way the screen files won't become too large and
                 /// the code becomes more clear.
                 InfoCard(
                     title: 'localization_title',
                     content: 'localization_content',
-                    icon: Ionicons.text_outline,
+                    icon: Ionicons.language_outline,
                     isPrimaryColor: true),
                 InfoCard(
                     title: 'linting_title',
                     content: 'linting_content',
-                    icon: Ionicons.options_outline,
+                    icon: Ionicons.code_slash_outline,
                     isPrimaryColor: false),
                 InfoCard(
                     title: 'storage_title',
                     content: 'storage_content',
-                    icon: Ionicons.folder_outline,
+                    icon: Ionicons.folder_open_outline,
                     isPrimaryColor: false),
                 InfoCard(
                     title: 'dark_mode_title',
@@ -129,7 +127,7 @@ class FirstScreen extends StatelessWidget {
                 InfoCard(
                     title: 'state_title',
                     content: 'state_content',
-                    icon: Ionicons.notifications_outline,
+                    icon: Ionicons.leaf_outline,
                     isPrimaryColor: true),
                 InfoCard(
                     title: 'display_title',

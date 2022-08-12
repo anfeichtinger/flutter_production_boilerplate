@@ -1,53 +1,52 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class InfoCard extends StatelessWidget {
+  const InfoCard(
+      {super.key,
+      required this.title,
+      required this.content,
+      required this.icon,
+      required this.isPrimaryColor});
+
   final String title;
   final String content;
   final IconData icon;
   final bool isPrimaryColor;
 
-  const InfoCard(
-      {Key? key,
-      required this.title,
-      required this.content,
-      required this.icon,
-      required this.isPrimaryColor})
-      : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    final textTheme = isPrimaryColor
+    final TextTheme textTheme = isPrimaryColor
         ? Theme.of(context).primaryTextTheme
         : Theme.of(context).textTheme;
     return Card(
       elevation: 2,
+      shadowColor: Theme.of(context).colorScheme.shadow,
       color: isPrimaryColor
-          ? Theme.of(context).primaryColor
-          : Theme.of(context).cardColor,
+          ? Theme.of(context).colorScheme.primary
+          : Theme.of(context).colorScheme.surface,
       shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(8))),
+          borderRadius: BorderRadius.all(Radius.circular(12))),
       child: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+          children: <Widget>[
             Text(
               tr(title),
-              style: textTheme.headline6!.apply(fontFamily: 'Poppins'),
+              style: textTheme.titleLarge!.apply(fontWeightDelta: 2),
             ),
             const SizedBox(height: 10),
             Text(
               tr(content),
-              style: textTheme.subtitle2,
+              style: textTheme.bodyMedium,
             ),
             const Spacer(),
             Icon(
               icon,
               size: 32,
-              color: textTheme.subtitle2!.color,
+              color: textTheme.bodyMedium!.color,
             ),
           ],
         ),

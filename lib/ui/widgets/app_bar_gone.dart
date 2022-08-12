@@ -2,22 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class AppBarGone extends StatelessWidget implements PreferredSizeWidget {
-  const AppBarGone({Key? key}): super(key: key);
+  const AppBarGone({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final brightness = Theme.of(context).brightness;
+    final Brightness brightness = Theme.of(context).colorScheme.brightness;
 
-    /// This is a reliable way to change the statusbar icons and color
+    /// This is a reliable way to change the status bar icons and color
     return AppBar(
-      backwardsCompatibility: false,
       systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Colors.transparent,
-          statusBarIconBrightness: brightness == Brightness.dark
-              ? Brightness.light
-              : Brightness.dark),
-      brightness: brightness,
+        statusBarBrightness: brightness,
+        systemStatusBarContrastEnforced: false,
+        statusBarColor: Theme.of(context).colorScheme.background,
+        statusBarIconBrightness:
+            brightness == Brightness.dark ? Brightness.light : Brightness.dark,
+      ),
       backgroundColor: Colors.transparent,
+      excludeHeaderSemantics: true,
+      shadowColor: Colors.transparent,
+      scrolledUnderElevation: 0,
+      surfaceTintColor: Colors.transparent,
+      foregroundColor: Colors.transparent,
       elevation: 0,
       bottomOpacity: 0,
       toolbarOpacity: 0,
