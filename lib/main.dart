@@ -23,24 +23,21 @@ void main() async {
   }
   final Directory tmpDir = await getTemporaryDirectory();
   Hive.init(tmpDir.toString());
-  final HydratedStorage storage = await HydratedStorage.build(
+  HydratedBloc.storage = await HydratedStorage.build(
     storageDirectory: tmpDir,
   );
 
-  HydratedBlocOverrides.runZoned(
-    () => runApp(
-      EasyLocalization(
-        path: 'assets/translations',
-        supportedLocales: const <Locale>[
-          Locale('en'),
-          Locale('de'),
-        ],
-        fallbackLocale: const Locale('en'),
-        useFallbackTranslations: true,
-        child: const MyApp(),
-      ),
+  runApp(
+    EasyLocalization(
+      path: 'assets/translations',
+      supportedLocales: const <Locale>[
+        Locale('en'),
+        Locale('de'),
+      ],
+      fallbackLocale: const Locale('en'),
+      useFallbackTranslations: true,
+      child: const MyApp(),
     ),
-    storage: storage,
   );
 }
 

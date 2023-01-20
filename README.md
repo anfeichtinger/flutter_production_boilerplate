@@ -41,19 +41,19 @@ flutter run lib/main.dart
 
 This repository makes use of the following pub packages:
 
-| Package | Version | Usage |
-| ------ | ------ | ------ |
-| [Bloc](https://pub.dev/packages/bloc) | ^8.0.3 | State management*
-| [Flutter Bloc](https://pub.dev/packages/flutter_bloc) | ^8.0.1 | State management*
-| [Hydrated Bloc](https://pub.dev/packages/hydrated_bloc) | ^8.1.0 | Persists Bloc state with Hive
-| [Equatable](https://pub.dev/packages/equatable) | ^2.0.3 | Easily compare custom classes, used for Bloc states*
-| [Flutter Lints](https://pub.dev/packages/flutter_lints) | ^2.0.1 | Stricter linting rules
-| [Path Provider](https://pub.dev/packages/path_provider) | ^2.0.11 | Get the save path for Hive
-| [Flutter Displaymode](https://pub.dev/packages/flutter_displaymode) | ^0.4.0 | Support high refresh rate displays
-| [Easy Localization](https://pub.dev/packages/easy_localization) | ^3.0.1 | Makes localization easy
-| [Hive](https://pub.dev/packages/hive) | ^2.2.3 | Platform independent storage.
-| [Url Launcher](https://pub.dev/packages/url_launcher) | ^6.1.5 | Open urls in Browser
-| [Ionicons](https://pub.dev/packages/ionicons) | ^0.2.1 | Modern icon library
+| Package                                                             | Version | Usage                                                |
+|---------------------------------------------------------------------|---------|------------------------------------------------------|
+| [Bloc](https://pub.dev/packages/bloc)                               | ^8.1.0  | State management*                                    |
+| [Flutter Bloc](https://pub.dev/packages/flutter_bloc)               | ^8.1.1  | State management*                                    |
+| [Hydrated Bloc](https://pub.dev/packages/hydrated_bloc)             | ^9.0.0  | Persists Bloc state with Hive                        |
+| [Equatable](https://pub.dev/packages/equatable)                     | ^2.0.5  | Easily compare custom classes, used for Bloc states* |
+| [Flutter Lints](https://pub.dev/packages/flutter_lints)             | ^2.0.1  | Stricter linting rules                               |
+| [Path Provider](https://pub.dev/packages/path_provider)             | ^2.0.11 | Get the save path for Hive                           |
+| [Flutter Displaymode](https://pub.dev/packages/flutter_displaymode) | ^0.5.0  | Support high refresh rate displays                   |
+| [Easy Localization](https://pub.dev/packages/easy_localization)     | ^3.0.1  | Makes localization easy                              |
+| [Hive](https://pub.dev/packages/hive)                               | ^2.2.3  | Platform independent storage.                        |
+| [Url Launcher](https://pub.dev/packages/url_launcher)               | ^6.1.7  | Open urls in Browser                                 |
+| [Ionicons](https://pub.dev/packages/ionicons)                       | ^0.2.2  | Modern icon library                                  |
 
 > \* Recommended to keep regardless of your project
 
@@ -72,7 +72,7 @@ You can follow the instructions in this [Stackoverflow issue](https://stackoverf
 ### Theme
 
 You can customize your brand colors in the [lib/config/theme.dart](./lib/config/theme.dart) file.
-The project useses colors from [TailwindCSS](https://tailwindcss.com/docs/customizing-colors). As
+The project uses colors from [TailwindCSS](https://tailwindcss.com/docs/customizing-colors). As
 primary swatch the indigo color palette is used while for the text the gray color palette is used.
 Feel free to replace those values with your own. In order to get a smooth transition for the text
 colors it is necessary to override each text type in the TextTheme.
@@ -131,14 +131,14 @@ following code:
 
 #### Light Theme
 
-| Home Light | Info Light |
-| ------ | ------ |
+| Home Light                                                                     | Info Light                                                                    |
+|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | ![Home Light](./assets/img/home_light.png "The home page with a light theme.") | ![Info Light](./assets/img/info_light.png "The home page with a dark theme.") |
 
 #### Dark Theme
 
-| Home Dark German | Info Dark German |
-| ------ | ------ |
+| Home Dark German                                                             | Info Dark German                                                            |
+|------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | ![Home Dark](./assets/img/home_dark.png "The info page with a light theme.") | ![Info Dark](./assets/img/info_dark.png "The info page with a dark theme.") |
 
 ## License

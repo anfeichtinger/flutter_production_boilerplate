@@ -71,7 +71,7 @@ class SecondScreen extends StatelessWidget {
                   icon: Ionicons.apps_outline,
                   url: Uri.parse(
                       'https://pub.dev/packages/flutter_bloc/versions/8.0.1'),
-                  version: '8.0.1',
+                  version: '8.1.1',
                 ),
                 GridItem(
                   title: 'bloc',
@@ -85,14 +85,14 @@ class SecondScreen extends StatelessWidget {
                   icon: Ionicons.folder_open_outline,
                   url: Uri.parse(
                       'https://pub.dev/packages/hydrated_bloc/versions/8.1.0'),
-                  version: '8.1.0',
+                  version: '9.0.0',
                 ),
                 GridItem(
                   title: 'equatable',
                   icon: Ionicons.git_compare_outline,
                   url: Uri.parse(
                       'https://pub.dev/packages/equatable/versions/2.0.3'),
-                  version: '2.0.3',
+                  version: '2.0.5',
                 ),
                 GridItem(
                   title: 'lints',
@@ -113,7 +113,7 @@ class SecondScreen extends StatelessWidget {
                   icon: Ionicons.speedometer_outline,
                   url: Uri.parse(
                       'https://pub.dev/packages/flutter_displaymode/versions/0.4.0'),
-                  version: '0.4.0',
+                  version: '0.5.0',
                 ),
                 GridItem(
                   title: 'easy_localization',
@@ -134,14 +134,14 @@ class SecondScreen extends StatelessWidget {
                   icon: Ionicons.share_outline,
                   url: Uri.parse(
                       'https://pub.dev/packages/url_launcher/versions/6.1.5'),
-                  version: '6.1.5',
+                  version: '6.1.7',
                 ),
                 GridItem(
                   title: 'ionicons',
                   icon: Ionicons.logo_ionic,
                   url: Uri.parse(
                       'https://pub.dev/packages/ionicons/versions/0.2.1'),
-                  version: '0.2.1',
+                  version: '0.2.2',
                 ),
               ],
             ),
