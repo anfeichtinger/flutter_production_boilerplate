@@ -31,5 +31,17 @@
   "donate_card_title": "Spenden",
 
   "author_divider_title": "Autor",
-  "packages_divider_title": "Pakete"
+  "packages_divider_title": "Pakete",
+
+  "flutter_bloc": "Flutter bloc",
+  "bloc": "Bloc",
+  "hydrated_bloc": "Hydrated bloc",
+  "equatable": "Equatable",
+  "lints": "Flutter Lints",
+  "path_provider": "Path provider",
+  "flutter_displaymode": "Displaymode",
+  "easy_localization": "Easy localization",
+  "hive": "Hive",
+  "url_launcher": "Url launcher",
+  "fluentui_system_icons": "FluentUI Icons"
 }

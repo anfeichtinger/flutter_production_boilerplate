@@ -63,7 +63,6 @@ final ColorScheme darkColorScheme = ColorScheme.dark(
 final ThemeData lightTheme = ThemeData(
   colorScheme: lightColorScheme,
   fontFamily: 'Nunito',
-  toggleableActiveColor: primarySwatch.shade500,
   textTheme: TextTheme(
     displayLarge: TextStyle(
       color: textSwatch.shade700,
@@ -126,11 +125,56 @@ final ThemeData lightTheme = ThemeData(
       fontFamily: 'Nunito',
     ),
   ),
+  checkboxTheme: CheckboxThemeData(
+    fillColor:
+        MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
+      if (states.contains(MaterialState.disabled)) {
+        return null;
+      }
+      if (states.contains(MaterialState.selected)) {
+        return primarySwatch.shade500;
+      }
+      return null;
+    }),
+  ),
+  radioTheme: RadioThemeData(
+    fillColor:
+        MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
+      if (states.contains(MaterialState.disabled)) {
+        return null;
+      }
+      if (states.contains(MaterialState.selected)) {
+        return primarySwatch.shade500;
+      }
+      return null;
+    }),
+  ),
+  switchTheme: SwitchThemeData(
+    thumbColor:
+        MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
+      if (states.contains(MaterialState.disabled)) {
+        return null;
+      }
+      if (states.contains(MaterialState.selected)) {
+        return primarySwatch.shade500;
+      }
+      return null;
+    }),
+    trackColor:
+        MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
+      if (states.contains(MaterialState.disabled)) {
+        return null;
+      }
+      if (states.contains(MaterialState.selected)) {
+        return primarySwatch.shade200;
+      }
+      return null;
+    }),
+  ),
 );
 
 final ThemeData darkTheme = lightTheme.copyWith(
   colorScheme: darkColorScheme,
-  toggleableActiveColor: primarySwatch.shade500,
   textTheme: TextTheme(
     displayLarge: TextStyle(
       color: textSwatch.shade200,
@@ -192,5 +236,51 @@ final ThemeData darkTheme = lightTheme.copyWith(
       color: textSwatch.shade400,
       fontFamily: 'Nunito',
     ),
+  ),
+  checkboxTheme: CheckboxThemeData(
+    fillColor:
+        MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
+      if (states.contains(MaterialState.disabled)) {
+        return null;
+      }
+      if (states.contains(MaterialState.selected)) {
+        return primarySwatch.shade500;
+      }
+      return null;
+    }),
+  ),
+  radioTheme: RadioThemeData(
+    fillColor:
+        MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
+      if (states.contains(MaterialState.disabled)) {
+        return null;
+      }
+      if (states.contains(MaterialState.selected)) {
+        return primarySwatch.shade500;
+      }
+      return null;
+    }),
+  ),
+  switchTheme: SwitchThemeData(
+    thumbColor:
+        MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
+      if (states.contains(MaterialState.disabled)) {
+        return null;
+      }
+      if (states.contains(MaterialState.selected)) {
+        return primarySwatch.shade500;
+      }
+      return null;
+    }),
+    trackColor:
+        MaterialStateProperty.resolveWith<Color?>((Set<MaterialState> states) {
+      if (states.contains(MaterialState.disabled)) {
+        return null;
+      }
+      if (states.contains(MaterialState.selected)) {
+        return primarySwatch.shade900;
+      }
+      return null;
+    }),
   ),
 );

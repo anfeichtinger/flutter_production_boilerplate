@@ -43,17 +43,17 @@ This repository makes use of the following pub packages:
 
 | Package                                                             | Version | Usage                                                |
 |---------------------------------------------------------------------|---------|------------------------------------------------------|
-| [Bloc](https://pub.dev/packages/bloc)                               | ^8.1.0  | State management*                                    |
-| [Flutter Bloc](https://pub.dev/packages/flutter_bloc)               | ^8.1.1  | State management*                                    |
-| [Hydrated Bloc](https://pub.dev/packages/hydrated_bloc)             | ^9.0.0  | Persists Bloc state with Hive                        |
+| [Bloc](https://pub.dev/packages/bloc)                               | ^8.1.2  | State management*                                    |
+| [Flutter Bloc](https://pub.dev/packages/flutter_bloc)               | ^8.1.3  | State management*                                    |
+| [Hydrated Bloc](https://pub.dev/packages/hydrated_bloc)             | ^9.1.3  | Persists Bloc state with Hive                        |
 | [Equatable](https://pub.dev/packages/equatable)                     | ^2.0.5  | Easily compare custom classes, used for Bloc states* |
-| [Flutter Lints](https://pub.dev/packages/flutter_lints)             | ^2.0.1  | Stricter linting rules                               |
-| [Path Provider](https://pub.dev/packages/path_provider)             | ^2.0.11 | Get the save path for Hive                           |
-| [Flutter Displaymode](https://pub.dev/packages/flutter_displaymode) | ^0.5.0  | Support high refresh rate displays                   |
-| [Easy Localization](https://pub.dev/packages/easy_localization)     | ^3.0.1  | Makes localization easy                              |
+| [Flutter Lints](https://pub.dev/packages/flutter_lints)             | ^3.0.1  | Stricter linting rules                               |
+| [Path Provider](https://pub.dev/packages/path_provider)             | ^2.1.2  | Get the save path for Hive                           |
+| [Flutter Displaymode](https://pub.dev/packages/flutter_displaymode) | ^0.6.0  | Support high refresh rate displays                   |
+| [Easy Localization](https://pub.dev/packages/easy_localization)     | ^3.0.3  | Makes localization easy                              |
 | [Hive](https://pub.dev/packages/hive)                               | ^2.2.3  | Platform independent storage.                        |
-| [Url Launcher](https://pub.dev/packages/url_launcher)               | ^6.1.7  | Open urls in Browser                                 |
-| [Ionicons](https://pub.dev/packages/ionicons)                       | ^0.2.2  | Modern icon library                                  |
+| [Url Launcher](https://pub.dev/packages/url_launcher)               | ^6.2.4  | Open urls in Browser                                 |
+| [FluentUI Icons](https://pub.dev/packages/fluentui_system_icons)    | ^0.2.2  | Microsoft's open source icon library                 |
 
 > \* Recommended to keep regardless of your project
 

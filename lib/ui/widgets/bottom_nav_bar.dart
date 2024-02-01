@@ -1,7 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ionicons/ionicons.dart';
+
 
 import '../../cubit/bottom_nav_cubit.dart';
 
@@ -15,6 +16,7 @@ class BottomNavBar extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.only(top: 1, right: 4, left: 4),
       elevation: 4,
+      clipBehavior: Clip.hardEdge,
       shadowColor: Theme.of(context).colorScheme.shadow,
       color: Theme.of(context).colorScheme.surfaceVariant,
       shape: const RoundedRectangleBorder(
@@ -36,11 +38,11 @@ class BottomNavBar extends StatelessWidget {
           unselectedItemColor: Theme.of(context).textTheme.bodySmall!.color,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: const Icon(Ionicons.home_outline),
+              icon: const Icon(FluentIcons.home_24_regular),
               label: tr('bottom_nav_first'),
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Ionicons.information_circle_outline),
+              icon: const Icon(FluentIcons.info_24_regular),
               label: tr('bottom_nav_second'),
             ),
           ],

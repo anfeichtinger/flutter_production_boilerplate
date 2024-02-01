@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
 
 import '../widgets/first_screen/info_card.dart';
 import '../widgets/first_screen/theme_card.dart';
@@ -41,7 +41,7 @@ class FirstScreen extends StatelessWidget {
                 value: context.locale == const Locale('de'),
                 title: Row(
                   children: <Widget>[
-                    Icon(Ionicons.language_outline,
+                    Icon(FluentIcons.local_language_24_regular,
                         color: Theme.of(context).colorScheme.primary),
                     const SizedBox(width: 16),
                     Text(
@@ -69,15 +69,15 @@ class FirstScreen extends StatelessWidget {
                 children: const <ThemeCard>[
                   ThemeCard(
                     mode: ThemeMode.system,
-                    icon: Ionicons.contrast_outline,
+                    icon: FluentIcons.dark_theme_24_regular,
                   ),
                   ThemeCard(
                     mode: ThemeMode.light,
-                    icon: Ionicons.sunny_outline,
+                    icon: FluentIcons.weather_sunny_24_regular,
                   ),
                   ThemeCard(
                     mode: ThemeMode.dark,
-                    icon: Ionicons.moon_outline,
+                    icon: FluentIcons.weather_moon_24_regular,
                   ),
                 ]),
 
@@ -87,7 +87,7 @@ class FirstScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Divider(
                 color:
-                    Theme.of(context).colorScheme.onBackground.withOpacity(.4),
+                    Theme.of(context).colorScheme.onBackground.withOpacity(.2),
               ),
             ),
             const SizedBox(height: 8),
@@ -98,7 +98,7 @@ class FirstScreen extends StatelessWidget {
               crossAxisCount: 2,
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
-              childAspectRatio: 4 / 5.5,
+              childAspectRatio: 4 / 5,
               padding: EdgeInsets.zero,
               children: const <InfoCard>[
                 /// Example: it is good practice to put widgets in separate files.
@@ -107,32 +107,32 @@ class FirstScreen extends StatelessWidget {
                 InfoCard(
                     title: 'localization_title',
                     content: 'localization_content',
-                    icon: Ionicons.language_outline,
+                    icon: FluentIcons.local_language_24_regular,
                     isPrimaryColor: true),
                 InfoCard(
                     title: 'linting_title',
                     content: 'linting_content',
-                    icon: Ionicons.code_slash_outline,
+                    icon: FluentIcons.code_24_regular,
                     isPrimaryColor: false),
                 InfoCard(
                     title: 'storage_title',
                     content: 'storage_content',
-                    icon: Ionicons.folder_open_outline,
+                    icon: FluentIcons.folder_open_24_regular,
                     isPrimaryColor: false),
                 InfoCard(
                     title: 'dark_mode_title',
                     content: 'dark_mode_content',
-                    icon: Ionicons.moon_outline,
+                    icon: FluentIcons.weather_moon_24_regular,
                     isPrimaryColor: true),
                 InfoCard(
                     title: 'state_title',
                     content: 'state_content',
-                    icon: Ionicons.leaf_outline,
+                    icon: FluentIcons.leaf_three_24_regular,
                     isPrimaryColor: true),
                 InfoCard(
                     title: 'display_title',
                     content: 'display_content',
-                    icon: Ionicons.speedometer_outline,
+                    icon: FluentIcons.top_speed_24_regular,
                     isPrimaryColor: false),
               ],
             ),

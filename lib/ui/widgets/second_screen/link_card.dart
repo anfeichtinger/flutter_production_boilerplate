@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class LinkCard extends StatelessWidget {
@@ -23,7 +24,7 @@ class LinkCard extends StatelessWidget {
         onTap: _launchUrl,
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(12))),
-        trailing: Icon(Ionicons.open_outline,
+        trailing: Icon(FluentIcons.open_24_regular,
             color: Theme.of(context).textTheme.titleMedium!.color),
         title: Row(
           children: <Widget>[
