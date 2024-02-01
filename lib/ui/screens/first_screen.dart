@@ -39,19 +39,27 @@ class FirstScreen extends StatelessWidget {
                 shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(12))),
                 value: context.locale == const Locale('de'),
-                title: Row(
-                  children: <Widget>[
-                    Icon(FluentIcons.local_language_24_regular,
-                        color: Theme.of(context).colorScheme.primary),
-                    const SizedBox(width: 16),
-                    Text(
-                      tr('language_switch_title'),
-                      style: Theme.of(context)
-                          .textTheme
-                          .titleMedium!
-                          .apply(fontWeightDelta: 2),
-                    ),
-                  ],
+                /// You can use a FittedBox to keep Text in its bounds.
+                title: FittedBox(
+                  alignment: Alignment.centerLeft,
+                  fit: BoxFit.none,
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        FluentIcons.local_language_24_regular,
+                        color: Theme.of(context).colorScheme.primary,
+                        opticalSize: 24,
+                      ),
+                      const SizedBox(width: 16),
+                      Text(
+                        tr('language_switch_title'),
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleMedium!
+                            .apply(fontWeightDelta: 2),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -98,7 +106,7 @@ class FirstScreen extends StatelessWidget {
               crossAxisCount: 2,
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
-              childAspectRatio: 4 / 5,
+              childAspectRatio: 4 / 5.75,
               padding: EdgeInsets.zero,
               children: const <InfoCard>[
                 /// Example: it is good practice to put widgets in separate files.

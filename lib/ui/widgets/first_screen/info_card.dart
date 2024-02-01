@@ -33,9 +33,12 @@ class InfoCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
-              tr(title),
-              style: textTheme.titleLarge!.apply(fontWeightDelta: 2),
+            FittedBox(
+              fit: BoxFit.fitWidth,
+              child: Text(
+                tr(title),
+                style: textTheme.titleLarge!.apply(fontWeightDelta: 2),
+              ),
             ),
             const SizedBox(height: 10),
             Text(
@@ -45,7 +48,7 @@ class InfoCard extends StatelessWidget {
             const Spacer(),
             Icon(
               icon,
-              size: 32,
+              size: 28,
               color: textTheme.bodyMedium!.color,
             ),
           ],

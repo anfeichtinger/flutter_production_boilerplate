@@ -20,7 +20,7 @@
   "state_content": "Powerful state management using Cubit & BLOC.",
 
   "display_title": "Display",
-  "display_content": "Support for high refresh rate displays with the flutter displaymode package.",
+  "display_content": "Support for high refresh rate displays with flutter displaymode.",
 
   "language_switch_title": "Use german",
 
