@@ -1,5 +1,7 @@
 # Flutter Production Boilerplate
 
+*Note: If you prefer to use Riverpod instead of BLOC you can use [flutter_production_boilerplate_riverpod](https://github.com/anfeichtinger/flutter_production_boilerplate_riverpod)*
+
 ## A flutter project containing bloc, flutter_lints, hive, easy_translations and more!
 
 This repository is the starting point for my personal projects. If you have any suggestions or
@@ -19,7 +21,7 @@ present in your development environment.
 Clone the project and enter the project folder.
 
 ```sh
-git clone https://github.com/anfeichtinger/flutter_production_boilerplate.git
+git clone git@github.com:anfeichtinger/flutter_production_boilerplate.git
 cd flutter_production_boilerplate
 ```
 
@@ -41,19 +43,21 @@ flutter run lib/main.dart
 
 This repository makes use of the following pub packages:
 
-| Package                                                             | Version | Usage                                                |
-|---------------------------------------------------------------------|---------|------------------------------------------------------|
-| [Bloc](https://pub.dev/packages/bloc)                               | ^8.1.2  | State management*                                    |
-| [Flutter Bloc](https://pub.dev/packages/flutter_bloc)               | ^8.1.3  | State management*                                    |
-| [Hydrated Bloc](https://pub.dev/packages/hydrated_bloc)             | ^9.1.3  | Persists Bloc state with Hive                        |
-| [Equatable](https://pub.dev/packages/equatable)                     | ^2.0.5  | Easily compare custom classes, used for Bloc states* |
-| [Flutter Lints](https://pub.dev/packages/flutter_lints)             | ^3.0.1  | Stricter linting rules                               |
-| [Path Provider](https://pub.dev/packages/path_provider)             | ^2.1.2  | Get the save path for Hive                           |
-| [Flutter Displaymode](https://pub.dev/packages/flutter_displaymode) | ^0.6.0  | Support high refresh rate displays                   |
-| [Easy Localization](https://pub.dev/packages/easy_localization)     | ^3.0.3  | Makes localization easy                              |
-| [Hive](https://pub.dev/packages/hive)                               | ^2.2.3  | Platform independent storage.                        |
-| [Url Launcher](https://pub.dev/packages/url_launcher)               | ^6.2.4  | Open urls in Browser                                 |
-| [FluentUI Icons](https://pub.dev/packages/fluentui_system_icons)    | ^0.2.2  | Microsoft's open source icon library                 |
+| Package                                                                     | Version  | Usage                                               |
+|-----------------------------------------------------------------------------|----------|-----------------------------------------------------|
+| [Bloc](https://pub.dev/packages/bloc)                                       | ^8.1.4   | State management*                                    |
+| [Flutter Bloc](https://pub.dev/packages/flutter_bloc)                       | ^8.1.6   | State management*                                    |
+| [Hydrated Bloc](https://pub.dev/packages/hydrated_bloc)                     | ^9.1.5   | Persists Bloc state with Hive                        |
+| [Equatable](https://pub.dev/packages/equatable)                             | ^2.0.5   | Easily compare custom classes, used for Bloc states* |
+| [Flutter Lints](https://pub.dev/packages/flutter_lints)                     | ^4.0.0   | Stricter linting rules*                             |
+| [Flutter Displaymode](https://pub.dev/packages/flutter_displaymode)         | ^0.6.0   | Support high refresh rate displays*                 |
+| [Path Provider](https://pub.dev/packages/path_provider)                     | ^2.1.4   | Get the save path for Hive                          |
+| [Easy Localization](https://pub.dev/packages/easy_localization)             | ^3.0.7   | Makes localization easy                             |
+| [Hive](https://pub.dev/packages/hive)                                       | ^2.2.3   | Platform independent storage.                       |
+| [Hive Flutter](https://pub.dev/packages/hive_flutter)                       | ^1.1.0   | Flutter plugin for hive.                            |
+| [Url Launcher](https://pub.dev/packages/url_launcher)                       | ^6.3.0   | Open urls in Browser                                |
+| [FluentUI Icons](https://pub.dev/packages/fluentui_system_icons)            | ^1.1.255 | Microsoft's open source icon library                |
+| [Staggered Grid view](https://pub.dev/packages/flutter_staggered_grid_view) | ^0.7.0   | Better grid views                                   |
 
 > \* Recommended to keep regardless of your project
 
@@ -67,15 +71,12 @@ inside the project files.
 
 ### Changing the package and app name
 
-You can follow the instructions in this [Stackoverflow issue](https://stackoverflow.com/a/51550358).
+You can follow the instructions in this [Stackoverflow issue](https://stackoverflow.com/a/51550358) or this [Flutter package](https://pub.dev/packages/change_app_package_name) .
 
 ### Theme
 
-You can customize your brand colors in the [lib/config/theme.dart](./lib/config/theme.dart) file.
-The project uses colors from [TailwindCSS](https://tailwindcss.com/docs/customizing-colors). As
-primary swatch the indigo color palette is used while for the text the gray color palette is used.
-Feel free to replace those values with your own. In order to get a smooth transition for the text
-colors it is necessary to override each text type in the TextTheme.
+You can customize your brand colors in the [lib/config/style.dart](./lib/config/style.dart) file.
+The project uses colors from [TailwindCSS](https://tailwindcss.com/docs/customizing-colors). The default theme contains comments that indicate which tailwind color is used. Feel free to replace the colors with your own or use [dynamic material 3 themes](https://github.com/material-foundation/flutter-packages/tree/main/packages/dynamic_color).
 
 ### Removing unwanted packages
 
@@ -131,15 +132,15 @@ following code:
 
 #### Light Theme
 
-| Home Light                                                                     | Info Light                                                                    |
-|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| ![Home Light](./assets/img/home_light.png "The home page with a light theme.") | ![Info Light](./assets/img/info_light.png "The home page with a dark theme.") |
+| Home Light                                                                     | Info Light                                                                     |
+|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| ![Home Light](./assets/img/home_light.png "The home page with a light theme.") | ![Info Light](./assets/img/info_light.png "The info page with a light theme.") |
 
 #### Dark Theme
 
-| Home Dark German                                                             | Info Dark German                                                            |
-|------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| ![Home Dark](./assets/img/home_dark.png "The info page with a light theme.") | ![Info Dark](./assets/img/info_dark.png "The info page with a dark theme.") |
+| Home Dark German                                                            | Info Dark German                                                            |
+|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| ![Home Dark](./assets/img/home_dark.png "The home page with a dark theme.") | ![Info Dark](./assets/img/info_dark.png "The info page with a dark theme.") |
 
 ## License
 

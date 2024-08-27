@@ -9,11 +9,11 @@ class TextDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 24, top: 24, right: 24, bottom: 10),
+      padding: const EdgeInsets.only(left: 24, top: 16, right: 24, bottom: 16),
       child: Row(children: <Widget>[
         Expanded(
           child: Divider(
-            color: Theme.of(context).colorScheme.onBackground.withOpacity(.2),
+            color: Theme.of(context).dividerColor,
           ),
         ),
         Padding(
@@ -25,7 +25,7 @@ class TextDivider extends StatelessWidget {
         ),
         Expanded(
           child: Divider(
-            color: Theme.of(context).colorScheme.onBackground.withOpacity(.2),
+            color: Theme.of(context).dividerColor,
           ),
         ),
       ]),

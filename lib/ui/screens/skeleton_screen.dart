@@ -28,13 +28,14 @@ class SkeletonScreen extends StatelessWidget {
           body: BlocBuilder<BottomNavCubit, int>(
             builder: (BuildContext context, int state) {
               return AnimatedSwitcher(
-                  duration: const Duration(milliseconds: 300),
-                  child: pageNavigation.elementAt(state));
+                duration: const Duration(milliseconds: 300),
+                child: pageNavigation.elementAt(state),
+              );
             },
           ),
 
           bottomNavigationBar: const BottomNavBar(),
-          backgroundColor: Theme.of(context).colorScheme.background,
+          backgroundColor: Theme.of(context).colorScheme.surface,
         ));
   }
 }

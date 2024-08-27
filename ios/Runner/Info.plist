@@ -45,11 +45,16 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+  		<string>https</string>
+   		<string>http</string>
+	</array>
 	<key>CFBundleLocalizations</key>
-    <array>
-        <string>en</string>
-        <string>de</string>
-    </array>
+	<array>
+		<string>en</string>
+   		<string>de</string>
+	</array>
     <key>LSApplicationQueriesSchemes</key>
     <array>
       <string>sms</string>

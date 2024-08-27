@@ -1,47 +1,37 @@
 {
   "app_name": "Flutter Production Boilerplate",
-
   "bottom_nav_first": "Home",
-  "bottom_nav_second": "Info",
-
+  "bottom_nav_second": "Details",
   "localization_title": "Localization",
   "localization_content": "Simplified translations with the Easy Translations package.",
-
   "linting_title": "Linting",
-  "linting_content": "Stricter linting rules with flutter lints recommended by the Dart team.",
-
+  "linting_content": "Stricter linting rules with flutter lints recommended by the dart team.",
   "storage_title": "Storage",
   "storage_content": "Blazing fast key-value database written in pure Dart with Hive.",
-
   "dark_mode_title": "Dark Mode",
-  "dark_mode_content": "Smooth transition to dark mode by using the inbuilt theming engine.",
-
+  "dark_mode_content": "Smooth transition to dark mode by using the inbuilt theming engine with material design 3.",
   "state_title": "State",
-  "state_content": "Powerful state management using Cubit & BLOC.",
-
+  "state_content": "Powerful state management using BLOC & Cubit.",
   "display_title": "Display",
   "display_content": "Support for high refresh rate displays with flutter displaymode.",
-
-  "language_switch_title": "Use german",
-
+  "language_switch_title": "German translation",
   "github_card_title": "GitHub repository",
   "website_card_title": "Website",
-  "twitter_card_title": "Twitter",
   "instagram_card_title": "Instagram",
   "donate_card_title": "Donate",
-
-  "author_divider_title": "Author",
+  "author_divider_title": "Created by",
   "packages_divider_title": "Packages",
-
-  "flutter_bloc": "Flutter bloc",
   "bloc": "Bloc",
-  "hydrated_bloc": "Hydrated bloc",
+  "flutter_bloc": "Flutter Bloc",
+  "hydrated_bloc": "Hydrated Bloc",
   "equatable": "Equatable",
   "lints": "Flutter Lints",
   "path_provider": "Path provider",
   "flutter_displaymode": "Displaymode",
   "easy_localization": "Easy localization",
   "hive": "Hive",
+  "hive_flutter": "Hive Flutter",
   "url_launcher": "Url launcher",
-  "fluentui_system_icons": "FluentUI Icons"
+  "fluentui_system_icons": "FluentUI Icons",
+  "flutter_staggered_grid_view": "Staggered Grid View"
 }

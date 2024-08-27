@@ -1,47 +1,37 @@
 {
   "app_name": "Flutter Production Boilerplate",
-
-  "bottom_nav_first": "Home",
-  "bottom_nav_second": "Info",
-
-  "localization_title": "Lokalisierung",
+  "bottom_nav_first": "Start",
+  "bottom_nav_second": "Details",
+  "localization_title": "Übersetzung",
   "localization_content": "Vereinfachte Übersetzungen mit dem Paket Easy Translations.",
-
   "linting_title": "Linting",
-  "linting_content": "Strengere Linting-Regeln mit Flutter Lints, empfohlen von Google.",
-
+  "linting_content": "Strengere Linting-Regeln mit Flutter Lints, empfohlen vom Dart-Team.",
   "storage_title": "Speicher",
-  "storage_content": "Extrem schnelle, in reinem Dart geschriebene Datenbank mit Hive.",
-
+  "storage_content": "Extrem schnelle, in reinem Dart geschriebene key-value Datenbank mit Hive.",
   "dark_mode_title": "Nachtmodus",
-  "dark_mode_content": "Sanfter Übergang in den Nachtmodus durch die eingebaute Theming-Engine.",
-
+  "dark_mode_content": "Sanfter Übergang in den Nachtmodus durch die eingebaute Theming-Engine mit Material Design 3.",
   "state_title": "Zustand",
-  "state_content": "Leistungsstarke Zustandsverwaltung mit Cubit & BLOC.",
-
+  "state_content": "Leistungsstarke Zustandsverwaltung mit BLOC & Cubit.",
   "display_title": "Anzeige",
   "display_content": "Displays mit hoher Bildwiederholrate durch Flutter Displaymode.",
-
-  "language_switch_title": "Deutsch verwenden",
-
-  "github_card_title": "GitHub repository",
+  "language_switch_title": "Deutsche Übersetzung",
+  "github_card_title": "GitHub Repository",
   "website_card_title": "Webseite",
-  "twitter_card_title": "Twitter",
   "instagram_card_title": "Instagram",
   "donate_card_title": "Spenden",
-
-  "author_divider_title": "Autor",
+  "author_divider_title": "Erstellt von",
   "packages_divider_title": "Pakete",
-
-  "flutter_bloc": "Flutter bloc",
   "bloc": "Bloc",
-  "hydrated_bloc": "Hydrated bloc",
+  "flutter_bloc": "Flutter Bloc",
+  "hydrated_bloc": "Hydrated Bloc",
   "equatable": "Equatable",
   "lints": "Flutter Lints",
   "path_provider": "Path provider",
   "flutter_displaymode": "Displaymode",
   "easy_localization": "Easy localization",
   "hive": "Hive",
+  "hive_flutter": "Hive Flutter",
   "url_launcher": "Url launcher",
-  "fluentui_system_icons": "FluentUI Icons"
+  "fluentui_system_icons": "FluentUI Icons",
+  "flutter_staggered_grid_view": "Staggered Grid View"
 }
