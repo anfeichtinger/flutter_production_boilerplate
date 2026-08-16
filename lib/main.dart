@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -21,10 +22,12 @@ void main() async {
   if (Platform.isAndroid) {
     await FlutterDisplayMode.setHighRefreshRate();
   }
-  final Directory tmpDir = await getTemporaryDirectory();
-  Hive.init(tmpDir.toString());
+  final String tmpDir = (await getTemporaryDirectory()).path;
+  Hive.init(tmpDir);
   HydratedBloc.storage = await HydratedStorage.build(
-    storageDirectory: tmpDir,
+    storageDirectory: kIsWeb
+        ? HydratedStorageDirectory.web
+        : HydratedStorageDirectory(tmpDir),
   );
 
   runApp(
