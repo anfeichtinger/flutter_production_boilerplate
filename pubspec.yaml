@@ -1,5 +1,6 @@
 name: flutter_production_boilerplate
 description: "A new Flutter project containing bloc, hive & easy localization."
+
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -19,7 +20,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0
 
 environment:
-  sdk: ^3.13.0
+  sdk: ^3.5.1
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -31,17 +32,17 @@ dependencies:
   flutter:
     sdk: flutter
 
-  bloc: ^9.2.1
-  flutter_bloc: ^9.1.1
-  hydrated_bloc: ^11.0.0
-  equatable: ^2.1.0
-  flutter_displaymode: ^0.7.0
-  path_provider: ^2.1.6 # Can be removed if not needed
-  easy_localization: ^3.0.8 # Can be removed if not needed
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+  hydrated_bloc: ^9.1.5
+  equatable: ^2.0.5
+  flutter_displaymode: ^0.6.0
+  path_provider: ^2.1.4 # Can be removed if not needed
+  easy_localization: ^3.0.7 # Can be removed if not needed
   hive: ^2.2.3 # Can be removed if not needed
   hive_flutter: ^1.1.0 # Can be removed if not needed
-  url_launcher: ^6.3.2 # Can be removed if not needed
-  fluentui_system_icons: ^1.1.273 # Can be removed if not needed
+  url_launcher: ^6.3.0 # Can be removed if not needed
+  fluentui_system_icons: ^1.1.255 # Can be removed if not needed
   flutter_staggered_grid_view: ^0.7.0 # Can be removed if not needed
 
 dev_dependencies:
@@ -53,7 +54,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^6.0.0
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

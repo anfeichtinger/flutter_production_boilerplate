@@ -41,6 +41,7 @@
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
         </intent>
+        <!-- Added for path provider -->
         <intent>
             <action android:name="android.intent.action.VIEW" />
             <data android:scheme="https" />

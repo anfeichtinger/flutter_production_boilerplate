@@ -51,7 +51,7 @@ class Style {
     // Divider
     dividerColor: const Color(0xFFcbd5e1), // slate-300
     // Used for shadows and in this project also borders of cards
-    shadowColor: Colors.black.withValues(alpha: .1),
+    shadowColor: Colors.black.withOpacity(.1),
     // Specific text styles and fonts
     textTheme: ThemeData.light(useMaterial3: true).textTheme.apply(
           fontFamily: 'Nunito',
@@ -103,7 +103,7 @@ class Style {
     // Divider
     dividerColor: const Color(0xFF52525b), // zinc-600
     // Used for shadows and in this project also borders of cards
-    shadowColor: Colors.white.withValues(alpha: .1),
+    shadowColor: Colors.white.withOpacity(.1),
     // Specific text styles and fonts
     textTheme: ThemeData.dark(useMaterial3: true).textTheme.apply(
           fontFamily: 'Nunito',
