@@ -1,6 +1,8 @@
 # Flutter Production Boilerplate
 
-*Note: If you prefer to use Riverpod instead of BLOC you can use [flutter_production_boilerplate_riverpod](https://github.com/anfeichtinger/flutter_production_boilerplate_riverpod)*
+*Note: If you prefer to use Riverpod instead of BLOC you can use [flutter_production_boilerplate_riverpod](https://github.com/reafeichtinger/flutter_production_boilerplate_riverpod)*
+
+*Note: If you prefer to use GetX instead of BLOC you can use [flutter_production_boilerplate_getx](https://github.com/reafeichtinger/flutter_production_boilerplate_getx)*
 
 ## A flutter project containing bloc, flutter_lints, hive, easy_translations and more!
 
@@ -21,7 +23,7 @@ present in your development environment.
 Clone the project and enter the project folder.
 
 ```sh
-git clone git@github.com:anfeichtinger/flutter_production_boilerplate.git
+git clone git@github.com:reafeichtinger/flutter_production_boilerplate.git
 cd flutter_production_boilerplate
 ```
 
